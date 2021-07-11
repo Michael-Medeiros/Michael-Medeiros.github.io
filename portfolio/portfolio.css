@@ -1,0 +1,213 @@
+html {
+    display:flex;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display:flex;
+    margin:0%;
+    padding:0%;
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    display:flex;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #030823 0%, #021D36 32.29%, rgba(0, 70, 134, 0.94) 66.67%, #02152B 100%);
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.top {
+    display:flex;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(6, 31, 34, 0.57);
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header > div > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#inicio, #contato, #projetos {
+    display:flex;
+    margin-right: 6%;
+    color: rgba(0, 250, 235, 1);
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.back > div {
+    display:flex;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    width:61%;
+    height:65%;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.description > h1 {
+    color: rgba(0, 250, 235, 1);
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    text-align: center;
+}
+
+.description > div {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: 0%;
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.42);
+    border-radius: 30px;
+    text-align: center;
+    color: rgba(0, 250, 235, 1);
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight:normal;
+    font-size:210%;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image {
+    display: flex;
+    margin-top:8%;
+    margin-left: 1%;
+    width:24%;
+    height:100%;
+}
+
+#image {
+    display: flex;
+    padding: 3%;
+    margin:3%;
+    width: 87%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40.63%, rgba(0, 0, 0, 0.9) 90.1%);
+}
+
+.image > div > img {
+    display:flex;
+    margin-left: 2%;
+    width: 95%;
+    height: 95%;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.end{
+    display:flex;
+    margin-top: 3%;
+    width: 100%;
+    height: 100%; 
+    align-items: center;
+    justify-content:center;
+    background-color: #021D36;
+}
+
+.contacts {
+    margin-top:3%;
+    display:flex;
+    margin-bottom: 3%;
+}
+
+#contacts{
+    margin: 1%;
+    display:flex;
+    flex-direction: column;
+}
+
+.icon {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: auto;
+    margin-left: 1%;
+}
+
+#git {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+#face, #linkedin, #insta{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+#project1, #project2, #project3 {
+    width: auto;
+    height: auto;
+    display:flex;
+    margin-bottom: 2%;
+    align-items: center;
+    color: white;
+    font-size: 100%;
+    font-family:'Courier New', Courier, monospace;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+
+@media (max-width: 700px){
+    .top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px
+    }
+    .description {
+        margin: 1%;
+        width: 100%;
+        height: 100%;
+    }
+    .description > div {
+        margin:1%;
+        width: auto;
+        height: auto;
+        font-size: 100%;
+    }
+    .icon {
+        flex-direction: row;
+        align-items: center;
+        margin: 0%;
+    }
+    #git, #face, #linkedin, #insta {
+        width: auto;
+        height: auto;
+    }
+    .image{
+        display: none;
+    }
+    .end{
+        width: 100%;
+        height: 100%;
+    }
+    .contacts {
+        width: 100%;
+        height: 100%;
+    }
+    #contacts{
+        font-size:100%;
+    }
+}
